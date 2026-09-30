@@ -1,0 +1,20 @@
+seed: 42
+data:
+  split_file: data/interim/pool_split.parquet
+  timestamp_col: timestamp
+  source_col: stream_name
+  label_col: label_binary
+  positive_class: malicious
+  incident_col: incident_ids
+sources_in_scope: [cisco_asa, aws_vpc_flow_log]
+splits:
+  cisco_asa:
+    train: ["2024-07-26 11:00", "2024-07-26 14:00"]
+    val:   ["2024-07-26 17:00", "2024-07-26 21:00"]
+    test:  ["2024-07-27 00:00", "2024-07-27 07:00"]
+  aws_vpc_flow_log:
+    train: ["2024-07-26 00:00", "2024-07-28 00:00"]
+    val:   ["2024-07-29 16:00", "2024-07-29 19:00"]
+    test:  ["2024-07-29 20:00", "2024-07-31 00:00"]
+incident_rule: "an incident is kept only in its earliest split; later rows dropped"
+blocklist: [matched_rules, suspicion_score, attack_techniques, label_confidence, incident_ids, label_binary]
