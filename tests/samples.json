@@ -1,0 +1,14 @@
+{
+ "known": {
+  "src_packets": 340, "dst_packets": 254, "total_packets": 594,
+  "src_bytes": 147522, "dst_bytes": 25354, "total_bytes": 172876,
+  "src_mean_pkt_size": 433.88823529411764, "dst_mean_pkt_size": 99.81889763779527,
+  "proto_tcp": 1, "proto_udp": 0, "proto_icmp": 0, "proto_other": 0
+ },
+ "unknown": {
+  "src_packets": 6, "dst_packets": 70, "total_packets": 76,
+  "src_bytes": 8235, "dst_bytes": 64798, "total_bytes": 73033,
+  "src_mean_pkt_size": 1372.5, "dst_mean_pkt_size": 925.6857142857143,
+  "proto_tcp": 0, "proto_udp": 0, "proto_icmp": 0, "proto_other": 1
+ }
+}

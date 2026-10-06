@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "isolation_forest": {
+    "aws_vpc_flow_log": [
+      "packets",
+      "bytes",
+      "duration",
+      "bytes_per_packet",
+      "dst_port_wellknown",
+      "cnt_60s",
+      "nports_60s",
+      "ndst_60s",
+      "cnt_600s",
+      "nports_600s",
+      "ndst_600s",
+      "dir_inbound",
+      "dir_outbound",
+      "proto_tcp",
+      "proto_udp",
+      "proto_icmp",
+      "dst_port_logfreq"
+    ],
+    "cisco_asa": [
+      "icmp_type",
+      "icmp_code",
+      "dst_port_wellknown",
+      "cnt_60s",
+      "nports_60s",
+      "ndst_60s",
+      "cnt_600s",
+      "nports_600s",
+      "ndst_600s",
+      "cnt_3600s",
+      "nports_3600s",
+      "ndst_3600s",
+      "dir_inbound",
+      "dir_outbound",
+      "proto_tcp",
+      "proto_udp",
+      "proto_icmp",
+      "dst_port_logfreq"
+    ]
+  },
+  "xgboost": [
+    "src_packets",
+    "dst_packets",
+    "total_packets",
+    "src_bytes",
+    "dst_bytes",
+    "total_bytes",
+    "src_mean_pkt_size",
+    "dst_mean_pkt_size",
+    "proto_tcp",
+    "proto_udp",
+    "proto_icmp",
+    "proto_other"
+  ]
+}
